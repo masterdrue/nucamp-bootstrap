@@ -39,7 +39,8 @@
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
                     <!--a touch of extra styling on the button -->
-                    <a href="#reserveForm" button type="button" class="btn btn-info btn-outline-light">Reserve Campsite</a>
+                    <a href="#reserveForm" role="button" button type="button" class="btn btn-info btn-outline-light" data-toggle="tooltip" 
+                    data-html="true" data-placement="left" title="Or Call us at,<br><strong>(352) 250-4387</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -172,5 +173,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
 </body>
 </html>
