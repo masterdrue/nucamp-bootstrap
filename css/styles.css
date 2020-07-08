@@ -45,3 +45,8 @@ footer {
     border: solid #5637dd;
     border-radius: 10px;
 }
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
