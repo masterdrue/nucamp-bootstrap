@@ -327,13 +327,41 @@
             </div>
         </div>
     </footer>
-    
+
+   
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-     <!-- External Scripts -->
+     <!-- jQuery for Slider -->
      <script src="js/scripts.js"></script>
+    
+
+    <!-- Script for Reserve Camp Site form modal -->
+    <script>
+        function reserve() {
+            const message = document.querySelector("#message");
+            const checkedInput = document.querySelector("input:checked");
+            const date = document.getElementById("date");
+            const numCampers = document.querySelector("select");
+
+                 if (checkedInput) {
+                    message.textContent = `Your Reservation is confirmed for ${date.value}, and includes ${checkedInput.value} with ${numCampers.value} Campers.`;
+                } else {
+                message.textContent - "Unknown reserveration.";
+                }
+            }
+    </script>
+    
+
+<!-- Tooltip Script
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+-->
 </body>
 </html>
