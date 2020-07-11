@@ -12,7 +12,18 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
     });
+    $("#reserveSite").click(function(){
+        $('#reserveModal').modal('toggle'); 
+    });
+    
+    $("#loginModalButton").click(function(){
+        $('#loginModal').modal('toggle'); 
+    
+    });
 });
+
+
+
 
 /* Reserve Campsite Modal Form */
 function reserve() {
