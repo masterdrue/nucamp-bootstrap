@@ -12,7 +12,7 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
     });
-    $("#reserveSite").click(function(){
+    $("#reserveButton").click(function(){
         $('#reserveModal').modal('toggle'); 
     });
     
